@@ -1,6 +1,6 @@
 # 🐍 Python Deep Drive
 
-A structured, hands-on collection of **53 Jupyter Notebooks** that walks through Python from absolute fundamentals to applied data & web tooling variables, OOP, file I/O, NumPy, Pandas, web requests, scraping, API integration, data visualization, and debugging. Every topic is documented with explanations, comparisons (often vs. Java), runnable code cells, and practice problems with solutions.
+A structured, hands-on collection of **54 Jupyter Notebooks** that walks through Python from absolute fundamentals to applied data & web tooling — variables, OOP, file I/O, NumPy, Pandas, web requests, scraping, API integration, data visualization (Matplotlib & Seaborn), and debugging. Every topic is documented with explanations, comparisons (often vs. Java), runnable code cells, and practice problems with solutions.
 
 > 📌 This repo is a personal learning log — notebooks are added and refined as topics are studied, so content grows over time.
 
@@ -10,21 +10,22 @@ A structured, hands-on collection of **53 Jupyter Notebooks** that walks through
 
 ```
 python-deep-drive/
-├── 01. Python Basics/              → 27 notebooks: variables → modules
-├── 02. OOP/                        → 6 notebooks: classes → encapsulation
+├── 01. Python Basics/               → 27 notebooks: variables → modules
+├── 02. OOP/                         → 6 notebooks: classes → encapsulation
 ├── 03. File Handling/
-│   ├── 03.1 Text File Types/       → read/write/append modes + sample .txt files
-│   ├── 03.2 JSON file Types/       → json.load/dump + sample .json files
-│   ├── 03.3 JSONL Types/           → JSON Lines format + data.jsonl
-│   └── 03.4 CSV Types/             → csv module (reader/writer/DictWriter) + sample .csv files
-├── 04. Numpy/                      → 4 notebooks: arrays, dtypes, booleans, initialization
-├── 05. Pandas Library/              → Series, DataFrame, aggregation, CSV/JSON import
-├── 06. Python Request Librery/      → HTTP requests, response handling, query params
+│   ├── 03.1 Text File Types/        → read/write/append modes + sample .txt files
+│   ├── 03.2 JSON file Types/        → json.load/dump + sample .json files
+│   ├── 03.3 JSONL Types/            → JSON Lines format + data.jsonl
+│   └── 03.4 CSV Types/              → csv module (reader/writer/DictWriter) + sample .csv files
+├── 04. Numpy/                       → 4 notebooks: arrays, dtypes, booleans, initialization
+├── 05. Pandas Library/               → Series, DataFrame, aggregation, CSV/JSON import
+├── 06. Python Request Librery/       → HTTP requests, response handling, query params
 ├── 07. Python BeautifulSoup Library/ → HTML parsing & web scraping
-├── 08. API Intergration/            → consuming REST APIs with requests
-├── 09. Matplotlib Library/          → 2D/3D plotting, all major chart types
-├── 10. Errors/                      → syntax/runtime/logical errors, debugging, pdb
-└── Modules/                         → custom module creation & import patterns
+├── 08. API Intergration/             → consuming REST APIs with requests
+├── 09. Matplotlib Library/           → 2D/3D plotting, all major chart types
+├── 10. Searbon/                      → Seaborn: statistical & relational plots
+├── 11. Errors/                       → syntax/runtime/logical errors, debugging, pdb
+└── Modules/                          → custom module creation & import patterns
 ```
 
 ---
@@ -111,7 +112,12 @@ Practical example of consuming a REST API end-to-end with `requests`.
 | 01 | Basics of Mathplotlib | Anatomy of a basic plot |
 | 02 | Types of Plots | Bar, Scatter, Pie, Subplots, Histograms, Box Plots, Stack/Area Plots, 3D Scatter/Line/Surface plots, saving figures as PNG |
 
-### 10. Errors
+### 10. Searbon (Seaborn)
+| # | Notebook | Covers |
+|---|----------|--------|
+| 01 | Basics Of Seaborn | Built-in datasets, Relational plots (Scatter), Categorical plots (Box & Violin), Matrix plots (Heatmap on flights data), Multi-plot grids (Pair Plot on the iris dataset), best practices |
+
+### 11. Errors
 | # | Notebook | Covers |
 |---|----------|--------|
 | 01 | Syntax Errors | Common causes & examples |
@@ -144,7 +150,7 @@ python -m venv venv
 source venv/bin/activate      # Windows: venv\Scripts\activate
 
 # Install the libraries used across the notebooks
-pip install numpy pandas matplotlib requests beautifulsoup4 jupyter
+pip install numpy pandas matplotlib seaborn requests beautifulsoup4 jupyter
 ```
 
 ### Running the notebooks
@@ -160,7 +166,7 @@ jupyter notebook
 
 ## 🛠️ Tech & Libraries Covered
 
-`Python 3` · `NumPy` · `Pandas` · `Matplotlib` · `requests` · `BeautifulSoup4` · `json` / `csv` (standard library) · `pdb`
+`Python 3` · `NumPy` · `Pandas` · `Matplotlib` · `Seaborn` · `requests` · `BeautifulSoup4` · `json` / `csv` (standard library) · `pdb`
 
 ---
 
